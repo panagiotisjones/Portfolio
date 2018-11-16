@@ -1,0 +1,56 @@
+a {
+  /* Getting rid of dashed line on clicked links */
+  outline: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.secondary-text {
+  font-size: 70%;
+  color: var(--secondary-text-color);
+}
+
+/* NAV */
+.navbar {
+  font-family: var(--navbar-font);
+  font-size: var(--navbar-font-size);
+  background-color: var(--extra-dark);
+}
+
+.navbar a {
+  color: var(--soft-white);
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+/* FOOTER */
+.footer-bar {
+  font-family: var(--main-item-font);
+  font-size: var(--main-item-font-size);
+  background-color: var(--main-dark);
+  color: var(--soft-white);
+}
+
+.footer-link-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-link {
+  color: var(--soft-white);
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.social-icon {
+  font-size: 1.7em;
+  color: var(--soft-white);
+  margin-right: 0.1em;
+}

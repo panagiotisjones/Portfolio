@@ -1,0 +1,12 @@
+:root {
+  --main-paragraph-font: 'Arial';
+  --main-header-font: 'Arial';
+  --main-item-font: 'Arial';
+  --main-item-font-size: 1.5em;
+  --main-dark: #333333;
+  --extra-dark: #222222;
+  --navbar-font: 'Arial';
+  --navbar-font-size: 1.8em;
+  --soft-white: #dddddd;
+  --secondary-text-color: #afafaf;
+}
