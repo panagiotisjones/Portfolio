@@ -1,8 +1,8 @@
 body {
   font-size: 1.15rem;
 }
-a, .form-check-input {
-  /* Getting rid of dashed line on clicked links */
+a, .form-check-input, input, button, button:active, button:focus {
+  /* Getting rid of dashed line on clicked links (I don't expect visually impaired people to visit my website) */
   outline: none;
   color: var(--soft-white);
 }
@@ -71,15 +71,6 @@ a:hover {
   color: var(--soft-white);
   text-shadow: 1px 4px var(--primary-color);
 }
-.container-contact {
-  font-size: 1.5rem;
-  padding-left: 5rem !important;
-  padding-right: 5rem !important;
-}
-
-.container-cv {
-  font-size: 1.15rem;
-}
 
 .arrow-message {
   margin-top: 10vh;
@@ -115,18 +106,57 @@ a:hover {
   text-shadow: 1px 4px var(--primary-color);
 }
 
+/* PROJECTS */
+.wrapper-projects {
+  background-image: url(../images/blurrycodeblack.jpg);
+  background-size: cover;
+  color: var(--soft-white);
+  text-shadow: 1px 4px var(--primary-color);
+}
+
+/* CV */
+.cv-wrapper {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-image: url(../images/newmorecode.jpg);
+  color: var(--soft-white);
+  text-shadow: 1px 4px var(--primary-color);
+}
+
+/* CONTACT ME */
+.wrapper-contact {
+  background-image: url(../images/ic.jpg);
+  color: var(--soft-white);
+  text-shadow: 2px 3px var(--primary-color);
+  font-weight: 600;
+}
+
+.container-contact {
+  font-size: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem
+}
+
 #emailInput, #textArea {
   font-size: 1.35rem;
+  background: transparent;
+  color: var(--soft-white);
+  border-color: var(--soft-white);
 }
+
 #emailInput {
   height: 55px;
 }
+
 /* NAV */
 .navbar {
   font-family: var(--navbar-font);
   font-size: var(--navbar-font-size);
   background-color: var(--extra-dark);
   height: 10vh;
+  transform: perspective(100px);
+  border-style: outset;
+  border-width: 2px;
 }
 
 .navbar a {
@@ -143,8 +173,11 @@ a:hover {
 .footer-bar {
   font-family: var(--main-item-font);
   font-size: var(--main-item-font-size);
-  background-color: var(--main-dark);
+  background-color: var(--extra-dark);
   color: var(--soft-white);
+  border-style: outset;
+  border-width: 1px;
+  border-color: black;
 }
 
 .footer-link-list {
@@ -168,11 +201,12 @@ a:hover {
 
 .button {
   padding: 6px 10px;
-  border: none;
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
   border-radius: 4px;
+  border-style: outset;
+  border-width: 1px;
   cursor: pointer;
 }
 
@@ -188,7 +222,7 @@ a:hover {
 }
 
 .form-control:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0 0.2rem green;
 }
 
 /* PROJECTS PAGE */
@@ -203,12 +237,13 @@ a:hover {
   from {
     background-color: var(--extra-dark);
   }
+
   to {
     background-color: var(--main-dark);
     border-color: var(--main-dark);
     color: white;
-    -webkit-box-shadow: 17px 25px 59px 0px rgba(0,0,0,0.54);
--moz-box-shadow: 17px 25px 59px 0px rgba(0,0,0,0.54);
-box-shadow: 17px 25px 59px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+    box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
   }
 }
