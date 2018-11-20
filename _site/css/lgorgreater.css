@@ -1,0 +1,99 @@
+body {
+  font-size: 1.15rem;
+}
+
+.h0 {
+  font-size: 2.1rem;
+  font-weight: bolder;
+}
+
+.headline {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+#believe {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.headline-extra {
+  font-size: 7rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* SECOND HOME FRAME */
+.container-home-2 {
+  background-image: url(../images/keyboard.jpg);
+  height: 100vh;
+  color: var(--soft-white);
+  text-shadow: 1px 3px var(--primary-color);
+  font-size: 2rem;
+}
+
+.frame-icon {
+  font-size: 6.5rem;
+}
+
+/* CV */
+.cv-wrapper {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-image: url(../images/newmorecode.jpg);
+  color: var(--soft-white);
+  text-shadow: 1px 3px var(--primary-color);
+}
+
+/* CONTACT ME */
+.wrapper-contact {
+  background-image: url(../images/ic.jpg);
+  color: var(--soft-white);
+  text-shadow: 2px 3px var(--primary-color);
+  font-weight: 600;
+}
+
+.container-contact {
+  font-size: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+#emailInput, #textArea {
+  font-size: 1.35rem;
+  background: transparent;
+  color: var(--soft-white);
+  border-color: var(--soft-white);
+}
+
+#emailInput {
+  height: 55px;
+}
+
+/* NAV */
+.navbar {
+  font-family: var(--navbar-font);
+  font-size: var(--navbar-font-size-lg);
+  background-color: var(--extra-dark);
+  height: 10vh;
+  transform: perspective(100px);
+  border-style: outset;
+  border-width: 2px;
+}
+
+/* FOOTER */
+.footer-bar {
+  font-family: var(--main-item-font);
+  font-size: var(--main-item-font-size-lg);
+  background-color: var(--extra-dark);
+  color: var(--soft-white);
+  border-style: outset;
+  border-width: 1px;
+  border-color: black;
+}
+
+.social-icon {
+  font-size: 1.7rem;
+  color: var(--soft-white);
+  margin-right: 0.1rem;
+}
