@@ -123,7 +123,6 @@ title: "Home"
           <div class="carousel-inner">
             <div class="carousel-item active" id="carousel-third">
               {% for node in site.pages %}
-              <h1>{{node.title}}</h1>
                 {% if node.isProject %}
                   <div class="card">
                     <img class="card-img-top" src="{{node.imgSrc}}" alt="Card image placeholder">
