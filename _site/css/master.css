@@ -1,2 +1,4 @@
 @import url("variables.css");
-@import url("components.css");
+@import url("allsizes.css");
+@import url("minlg.css");
+@import url("maxlg.css");

@@ -1,0 +1,181 @@
+/* General components */
+a, .form-check-input, input, button, button:active, button:focus {
+  /* Getting rid of dashed line on clicked links (I don't expect visually impaired people to visit my website) */
+  outline: none;
+  color: var(--soft-white);
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#page-1 {
+  display: block;
+}
+
+#page-2 {
+  display: none;
+}
+
+#page-3 {
+  display: none;
+}
+
+.cv-list-item {
+  list-style-type: georgian;
+  list-style-position: inside;
+}
+
+.secondary-text {
+  font-size: 70%;
+  color: var(--secondary-text-color);
+}
+
+.card {
+  color: var(--soft-white);
+  background-color: #121205;
+  box-shadow: 1px 1px 10px 3px #111;
+  border-radius: 20px;
+  border: 0px;
+  overflow: hidden;
+  min-height: 300px;
+  min-width: 200px;
+  max-height: 750px;
+  max-width: 500px;
+}
+
+.arrow {
+  height: 20px;
+  width: 20px;
+  opacity: 0.5;
+  border-right: solid white;
+  border-bottom: solid white;
+  transform: rotate(45deg);
+}
+
+.arrow-wrapper {
+  height: 30px;
+  width: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: arrowAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.button-dark {
+  color: var(--soft-white);
+  background-color: var(--extra-dark);
+  border-color: var(--extra-dark);
+  padding: 8px;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.button-dark:hover {
+  animation-name: hoverAnimation;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.button-dark-active {
+  border-color: var(--main-dark);
+  color: white;
+  background-color: var(--main-dark);
+  -webkit-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+  box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+}
+
+#loading-placeholder {
+  display: inline-block;
+  position: fixed;
+  background: black;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Projects */
+.wrapper-projects {
+  background-image: url(../images/blurrycodeblack.jpg);
+  background-size: cover;
+  color: var(--soft-white);
+  text-shadow: 1px 3px var(--primary-color);
+}
+
+.container-project {
+  background-color: #999;
+  box-shadow: 17px 25px 59px 0px rgba(0,0,0,0.54);
+  color: white;
+}
+
+/* Nav */
+.navbar a:hover {
+  animation-name: hoverAnimation;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+/* Footer */
+.footer-link-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.social-icon {
+  font-size: 1.7rem;
+  color: var(--soft-white);
+  margin-right: 0.1rem;
+}
+
+/* Contact me */
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem green;
+}
+
+/* Animations */
+@keyframes hoverAnimation {
+  from {
+    background-color: var(--extra-dark);
+  }
+
+  to {
+    background-color: var(--main-dark);
+    border-color: var(--main-dark);
+    color: white;
+    -webkit-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+    box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+    background-color: var(--main-dark);
+    border-color: var(--main-dark);
+    color: white;
+    -webkit-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+    box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+  }
+}
+@keyframes arrowAnimation {
+  0% {
+    padding: 0px 0px 0px 0px;
+  }
+  15% {
+    padding: 20px 0px 0px 0px;
+  }
+  30% {
+    padding: 0px 0px 0px 0px;
+  }
+  45% {
+    padding: 15px 0px 0px 0px;
+  }
+  60% {
+    padding: 0px 0px 0px 0px;
+  }
+  100% {
+    padding: 0px 0px 0px 0px;
+  }
+}

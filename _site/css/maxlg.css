@@ -1,0 +1,130 @@
+@media screen and (max-width: 1199px) {
+  body {
+    font-family: var(--main-font);
+  }
+  /* Custom headers */
+  .h0 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .headline {
+    font-size: 2.25rem;
+    font-weight: 400;
+  }
+
+  #believe {
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .headline-extra {
+    font-size: 4rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .front-text {
+    font-size: 1.5em;
+  }
+
+  /* First home frame */
+  .container-home-1 {
+    background-image: url(../images/blurrycode.jpg);
+    color: var(--soft-white);
+    text-shadow: 1px 2px var(--primary-color);
+    filter: blur(0px);
+  }
+
+  .arrow-message {
+  }
+
+  .arrow-wrapper:hover {
+    cursor: pointer;
+  }
+
+  .row-space {
+      width: 100%;
+  }
+
+  /* Second home frame */
+  .container-home-2 {
+    padding: 50px 0px;
+    background-image: url(../images/keyboard.jpg);
+    color: var(--soft-white);
+    text-shadow: 1px 2px var(--primary-color);
+    font-size: 1.3rem;
+  }
+
+  .frame-icon {
+    font-size: 3rem;
+  }
+
+  /* Third home frame */
+  .container-home-3 {
+    background-image: url(../images/newpurple.jpg);
+    color: var(--soft-white);
+    text-shadow: 1px 2px var(--primary-color);
+  }
+
+  /* CV */
+  .cv-wrapper {
+    font-size: 1.15rem;
+    font-weight: 600;
+    background-image: url(../images/newmorecode.jpg);
+    color: var(--soft-white);
+    text-shadow: 1px 2px var(--primary-color);
+  }
+
+  /* Contact me */
+  .wrapper-contact {
+    background-image: url(../images/ic.jpg);
+    color: var(--soft-white);
+    text-shadow: 2px 2px var(--primary-color);
+    font-weight: 400;
+  }
+
+  .container-contact {
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #emailInput, #textArea {
+    font-size: 1.2rem;
+    background: transparent;
+    color: var(--soft-white);
+    border-color: var(--soft-white);
+  }
+
+  #emailInput {
+    height: 35px;
+  }
+
+  /* Nav */
+  .navbar {
+    font-family: var(--navfooter-font);
+    font-size: 1.1em;
+    background-color: var(--extra-dark);
+    transform: perspective(100px);
+    border-style: outset;
+    border-width: 2px;
+  }
+
+  /* Footer */
+  .footer-bar {
+    font-family: var(--navfooter-font);
+    font-size: 1.1em;
+    background-color: var(--extra-dark);
+    color: var(--soft-white);
+    border-style: outset;
+    border-width: 1px;
+    border-color: black;
+  }
+
+  .social-icon {
+    font-size: 1.25rem;
+    color: var(--soft-white);
+    margin-right: 0.1rem;
+  }
+}

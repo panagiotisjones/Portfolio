@@ -1,12 +1,8 @@
 :root {
-  --main-paragraph-font: 'Arial';
-  --main-header-font: 'Arial';
-  --main-item-font: 'Arial';
+  --main-font: 'Liberation Serif';
   --main-dark: #333333;
   --extra-dark: #222222;
-  --navbar-font: 'Arial';
-  --navbar-font-size-lg: 1.8em;
-  --navbar-font-size-under-lg: 1.2em;
+  --navfooter-font: 'Laudatio';
   --soft-white: #c8c8c8;
   --secondary-text-color: #afafaf;
   --primary-color: #006400;
