@@ -26,8 +26,3 @@ function setCookie(key,value,expiryInDays) {
   }
   document.cookie=string;
 }
-
-function clearCookie(key) {
-  expiredDate=new Date(0);
-  document.cookie=key+"=null; expires="+expiredDate.toUTCString();
-}

@@ -105,7 +105,7 @@
   .navbar {
     font-family: var(--navfooter-font);
     font-size: 1.1em;
-    background-color: var(--extra-dark);
+    background-image: linear-gradient(to right, #151515, #1f1f1f);
     transform: perspective(100px);
     border-style: outset;
     border-width: 2px;

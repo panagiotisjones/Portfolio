@@ -1,3 +1,5 @@
+/* Not the most elegant piece of code I've written but it handles pagination */
+
 var page1=document.getElementById("page-1");
 var page2=document.getElementById("page-2");
 var page3=document.getElementById("page-3");
