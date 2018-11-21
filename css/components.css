@@ -1,8 +1,264 @@
-body {
-  font-size: 1.15rem;
+@media screen and (min-width:1200px) {
+  body {
+    font-size: 1.15rem;
+  }
+
+  .h0 {
+    font-size: 2.1vw;
+    font-weight: bolder;
+  }
+
+  .headline {
+    font-size: 4vw;
+    font-weight: 800;
+  }
+
+  .front-text {
+    font-size: 2.25vw;
+  }
+
+  #believe {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .headline-extra {
+    font-size: 7vw;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  /* FIRST HOME FRAME */
+  .container-home-1 {
+    background-image: url(../images/blurrycode.jpg);
+    color: var(--soft-white);
+    text-shadow: 1px 3px var(--primary-color);
+    filter: blur(0px);
+  }
+
+  .arrow-message {
+    margin-top: 10vh;
+  }
+
+  .arrow-wrapper:hover {
+    cursor: pointer;
+  }
+
+  .row-space {
+      width: 100%;
+      height: 11.5vh;
+  }
+
+  /* THIRD HOME FRAME */
+  .container-home-3 {
+    background-image: url(../images/newpurple.jpg);
+    color: var(--soft-white);
+    text-shadow: 1px 3px var(--primary-color);
+  }
+
+  /* SECOND HOME FRAME */
+  .container-home-2 {
+    background-image: url(../images/keyboard.jpg);
+    color: var(--soft-white);
+    text-shadow: 1px 3px var(--primary-color);
+    font-size: 2vw;
+  }
+
+  .frame-icon {
+    font-size: 6.5rem;
+  }
+
+  /* CV */
+  .cv-wrapper {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-image: url(../images/newmorecode.jpg);
+    color: var(--soft-white);
+    text-shadow: 1px 3px var(--primary-color);
+  }
+
+  /* CONTACT ME */
+  .wrapper-contact {
+    background-image: url(../images/ic.jpg);
+    color: var(--soft-white);
+    text-shadow: 2px 3px var(--primary-color);
+    font-weight: 600;
+  }
+
+  .container-contact {
+    font-size: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  #emailInput, #textArea {
+    font-size: 1.35rem;
+    background: transparent;
+    color: var(--soft-white);
+    border-color: var(--soft-white);
+  }
+
+  #emailInput {
+    height: 55px;
+  }
+
+  /* NAV */
+  .navbar {
+    font-family: var(--navbar-font);
+    font-size: 1.5em;
+    background-color: var(--extra-dark);
+    transform: perspective(100px);
+    border-style: outset;
+    border-width: 2px;
+  }
+
+  /* FOOTER */
+  .footer-bar {
+    font-family: var(--main-item-font);
+    font-size: 1.5em;
+    background-color: var(--extra-dark);
+    color: var(--soft-white);
+    border-style: outset;
+    border-width: 1px;
+    border-color: black;
+  }
+
+  .social-icon {
+    font-size: 1.7vw;
+    color: var(--soft-white);
+    margin-right: 0.1rem;
+  }
 }
-a, .form-check-input {
-  /* Getting rid of dashed line on clicked links */
+
+@media screen and (max-width: 1199px) {
+  .h0 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .headline {
+    font-size: 2.25rem;
+    font-weight: 400;
+  }
+
+  #believe {
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .headline-extra {
+    font-size: 4rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .front-text {
+    font-size: 1.5em;
+  }
+
+  /* FIRST HOME FRAME */
+  .container-home-1 {
+    background-image: url(../images/blurrycode.jpg);
+    color: var(--soft-white);
+    text-shadow: 1px 3px var(--primary-color);
+    filter: blur(0px);
+  }
+
+  .arrow-message {
+  }
+
+  .arrow-wrapper:hover {
+    cursor: pointer;
+  }
+
+  .row-space {
+      width: 100%;
+  }
+
+  /* THIRD HOME FRAME */
+  .container-home-3 {
+    background-image: url(../images/newpurple.jpg);
+    color: var(--soft-white);
+    text-shadow: 1px 3px var(--primary-color);
+  }
+
+  /* SECOND HOME FRAME */
+  .container-home-2 {
+    padding: 50px 0px;
+    background-image: url(../images/keyboard.jpg);
+    color: var(--soft-white);
+    text-shadow: 1px 3px var(--primary-color);
+    font-size: 1.3rem;
+  }
+
+  .frame-icon {
+    font-size: 3rem;
+  }
+
+  /* CV */
+  .cv-wrapper {
+    font-size: 1.15rem;
+    font-weight: 600;
+    background-image: url(../images/newmorecode.jpg);
+    color: var(--soft-white);
+    text-shadow: 1px 3px var(--primary-color);
+  }
+
+  /* CONTACT ME */
+  .wrapper-contact {
+    background-image: url(../images/ic.jpg);
+    color: var(--soft-white);
+    text-shadow: 2px 3px var(--primary-color);
+    font-weight: 400;
+  }
+
+  .container-contact {
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #emailInput, #textArea {
+    font-size: 1.2rem;
+    background: transparent;
+    color: var(--soft-white);
+    border-color: var(--soft-white);
+  }
+
+  #emailInput {
+    height: 35px;
+  }
+
+  /* NAV */
+  .navbar {
+    font-family: var(--navbar-font);
+    font-size: 1.1em;
+    background-color: var(--extra-dark);
+    transform: perspective(100px);
+    border-style: outset;
+    border-width: 2px;
+  }
+
+  /* FOOTER */
+  .footer-bar {
+    font-family: var(--main-item-font);
+    font-size: 1.1em;
+    background-color: var(--extra-dark);
+    color: var(--soft-white);
+    border-style: outset;
+    border-width: 1px;
+    border-color: black;
+  }
+
+  .social-icon {
+    font-size: 1.25rem;
+    color: var(--soft-white);
+    margin-right: 0.1rem;
+  }
+}
+/* All sizes */
+a, .form-check-input, input, button, button:active, button:focus {
+  /* Getting rid of dashed line on clicked links (I don't expect visually impaired people to visit my website) */
   outline: none;
   color: var(--soft-white);
 }
@@ -10,6 +266,18 @@ a, .form-check-input {
 a:hover {
   color: white;
   text-decoration: none;
+}
+
+#page-1 {
+  display: block;
+}
+
+#page-2 {
+  display: none;
+}
+
+#page-3 {
+  display: none;
 }
 
 .cv-list-item {
@@ -22,30 +290,17 @@ a:hover {
   color: var(--secondary-text-color);
 }
 
-.h0 {
-  font-size: 2.1rem;
-  font-weight: bolder;
-}
-
-.headline {
-  font-size: 4rem;
-  font-weight: 800;
-}
-
-#believe {
-  font-style: italic;
-  font-weight: 600;
-}
-
-.headline-extra {
-  font-size: 7rem;
-  font-weight: 800;
-  font-style: italic;
-}
-
 .card {
-  color: black;
-  text-shadow: 0px 0px;
+  color: var(--soft-white);
+  background-color: #121205;
+  box-shadow: 1px 1px 10px 3px #111;
+  border-radius: 20px;
+  border: 0px;
+  overflow: hidden;
+  min-height: 500px;
+  min-width: 300px;
+  max-height: 750px;
+  max-width: 500px;
 }
 
 .arrow {
@@ -62,75 +317,18 @@ a:hover {
   width: 30px;
   margin-left: auto;
   margin-right: auto;
+  animation-name: arrowAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
-/* FIRST HOME FRAME */
-.container-home-1 {
-  height: 90vh;
-  background-image: url(../images/blurrycode.jpg);
+/* PROJECTS */
+.wrapper-projects {
+  background-image: url(../images/blurrycodeblack.jpg);
+  background-size: cover;
   color: var(--soft-white);
-  text-shadow: 1px 4px var(--primary-color);
-}
-.container-contact {
-  font-size: 1.5rem;
-  padding-left: 5rem !important;
-  padding-right: 5rem !important;
-}
-
-.container-cv {
-  font-size: 1.15rem;
-}
-
-.arrow-message {
-  margin-top: 10vh;
-}
-
-.arrow-wrapper:hover {
-  cursor: pointer;
-}
-
-/* SECOND HOME FRAME */
-.container-home-2 {
-  background-image: url(../images/keyboard.jpg);
-  height: 100vh;
-  color: var(--soft-white);
-  text-shadow: 1px 4px var(--primary-color);
-  font-size: 2rem;
-}
-
-.frame-icon {
-  font-size: 6.5rem;
-}
-
-.row-space {
-    width: 100%;
-    height: 11.5vh;
-}
-
-/* THIRD HOME FRAME */
-.container-home-3 {
-  background-image: url(../images/newpurple.jpg);
-  height: 100vh;
-  color: var(--soft-white);
-  text-shadow: 1px 4px var(--primary-color);
-}
-
-#emailInput, #textArea {
-  font-size: 1.35rem;
-}
-#emailInput {
-  height: 55px;
-}
-/* NAV */
-.navbar {
-  font-family: var(--navbar-font);
-  font-size: var(--navbar-font-size);
-  background-color: var(--extra-dark);
-  height: 10vh;
-}
-
-.navbar a {
-  color: var(--soft-white);
+  text-shadow: 1px 3px var(--primary-color);
 }
 
 .navbar a:hover {
@@ -139,21 +337,9 @@ a:hover {
   animation-fill-mode: forwards;
 }
 
-/* FOOTER */
-.footer-bar {
-  font-family: var(--main-item-font);
-  font-size: var(--main-item-font-size);
-  background-color: var(--main-dark);
-  color: var(--soft-white);
-}
-
 .footer-link-list {
   list-style-type: none;
   padding-left: 0;
-}
-
-.footer-link {
-  color: var(--soft-white);
 }
 
 .footer-link:hover {
@@ -166,20 +352,13 @@ a:hover {
   margin-right: 0.1rem;
 }
 
-.button {
-  padding: 6px 10px;
-  border: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-align: center;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .button-dark {
   color: var(--soft-white);
   background-color: var(--extra-dark);
   border-color: var(--extra-dark);
+  padding: 8px;
+  border-radius: 1px;
+  cursor: pointer;
 }
 .button-dark:hover {
   animation-name: hoverAnimation;
@@ -188,7 +367,7 @@ a:hover {
 }
 
 .form-control:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0 0.2rem green;
 }
 
 /* PROJECTS PAGE */
@@ -198,17 +377,61 @@ a:hover {
   color: white;
 }
 
+.button-dark-active {
+  border-color: var(--main-dark);
+  color: white;
+  background-color: var(--main-dark);
+  -webkit-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+  box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+}
+
+#loading-placeholder {
+  display: inline-block;
+  position: fixed;
+  background: black;
+  height: 100vh;
+  width: 100%;
+}
+
 /* ANIMATIONS */
 @keyframes hoverAnimation {
   from {
     background-color: var(--extra-dark);
   }
+
   to {
     background-color: var(--main-dark);
     border-color: var(--main-dark);
     color: white;
-    -webkit-box-shadow: 17px 25px 59px 0px rgba(0,0,0,0.54);
--moz-box-shadow: 17px 25px 59px 0px rgba(0,0,0,0.54);
-box-shadow: 17px 25px 59px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+    box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+    background-color: var(--main-dark);
+    border-color: var(--main-dark);
+    color: white;
+    -webkit-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+    box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
+  }
+}
+@keyframes arrowAnimation {
+  0% {
+    padding: 0px 0px 0px 0px;
+  }
+  15% {
+    padding: 20px 0px 0px 0px;
+  }
+  30% {
+    padding: 0px 0px 0px 0px;
+  }
+  45% {
+    padding: 15px 0px 0px 0px;
+  }
+  60% {
+    padding: 0px 0px 0px 0px;
+  }
+  100% {
+    padding: 0px 0px 0px 0px;
   }
 }

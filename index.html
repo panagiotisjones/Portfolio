@@ -5,22 +5,31 @@ title: "Home"
 <div class="container-home-1 pt-5">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-7 pl-5 pr-5">
+      <div class="col-12 col-lg-7 pl-5 pr-5">
         <h1 class="headline-extra mb-5">I am...</h1>
         <h1 class="headline">An ambitious web developer and programmer</h1>
       </div>
-      <div class="col-5">
+      <div class="col-12 col-lg-5 pt-5 pt-lg-0 pl-5 pl-lg-0">
         <h1 class="headline-extra mb-5">I believe...</h1>
-        <h1 class="mb-4">That flexibility, adaptability, and growth, ought to be characteristics common to humans and systems</h1>
-        <h1 class="mb-4">That elegant code yields elegant results</h1>
-        <h1 class="mb-4">That the team's love for its work is reflected on the product</h1>
-        <h1 class="mb-4">That problem is another word for creativity outlet</h1>
+        <h1 class="mb-4 front-text">That flexibility, adaptability, and growth, ought to be characteristics common to humans and systems</h1>
+        <h1 class="mb-4 front-text">That elegant code yields elegant results</h1>
+        <h1 class="mb-4 front-text">That the team's love for its work is reflected on the product</h1>
+        <h1 class="mb-4 front-text">That problem is another word for creativity outlet</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col pb-5">
+        <a href="#container-home-2">
+          <div class="arrow-wrapper">
+            <div class="arrow"></div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container-home-2">
+<div class="container-home-2" id="container-home-2">
   <div class="container-fluid">
     <div class="row">
       <div class="col text-center">
@@ -29,17 +38,17 @@ title: "Home"
     </div>
     <div class="row row-space"></div>
     <div class="row services-row">
-      <div class="col text-center pl-5 pr-5">
+      <div class="col-12 col-md-6 col-lg-4 text-center pl-5 pr-5">
         <i class="fas fa-code frame-icon"></i>
         <h1 class="mb-5 mt-3">Software Development</h1>
-        <p>I develop, review, and maintain software code for Linux and Windows and Android mobile applications in Java and C++</p>
+        <p>I develop, review, and maintain software code for Linux, Windows, and Android mobile applications in Java and C++</p>
       </div>
-      <div class="col text-center pl-5 pr-5">
+      <div class="col-12 col-md-6 col-lg-4 text-center pl-5 pr-5">
         <i class="fab fa-node-js frame-icon"></i>
         <h1 class="mb-5 mt-3">Web Development</h1>
         <p>I design and develop responsive and interactive websites for corporations and private businesses with CSS and JavaScript</p>
       </div>
-      <div class="col text-center pl-5 pr-5">
+      <div class="col-12 col-md-12 col-lg-4 text-center pl-5 pr-5">
         <i class="fas fa-terminal frame-icon"></i>
         <h1 class="mb-5 mt-3">Network Administration</h1>
         <p>I configure and administrate LANs and intranets with Cisco systems for corporations for optimal performance</p>
@@ -47,16 +56,19 @@ title: "Home"
     </div>
     <div class="row row-space"></div>
     <div class="row">
-      <div class="col">
+      <div class="col pb-5">
+        <a href="#container-home-3">
         <div class="arrow-wrapper">
-          <div class="arrow"></div>
-        </div>
+            <div class="arrow"></div>
+            <div>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
 </div>
-
-<div class="container-home-3">
+<div class="container-home-3" id="container-home-3">
   <div class="container pt-4">
     <div class="row mb-3">
       <div class="col text-center">
@@ -64,89 +76,88 @@ title: "Home"
       </div>
     </div>
     <div class="row">
-      <div class="col pr-5">
+      <div class="col-12 col-lg-6 p-5">
         <div id="carousel1" class="carousel slide">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+            <div class="carousel-item active" id="carousel-first">
+              {% for node in site.pages %}
+                {% if node.isProject %}
+                  <div class="card">
+                    <img class="card-img-top" src="{{node.imgSrc}}" alt="Card image placeholder">
+                    <div class="card-body text-center">
+                      <h3 class="card-title">{{node.title}}</h3>
+                      <p class="card-text text-justify">{{node.cardBody}}</p>
+                      <a href="#" class="button button-dark">Read more</a>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
             </div>
-            <div class="carousel-item">
-              <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+            <div class="carousel-item" id="carousel-second">
+              {% for node in site.pages %}
+                {% if node.isProject %}
+                  <div class="card">
+                    <img class="card-img-top" src="{{node.imgSrc}}" alt="Card image placeholder">
+                    <div class="card-body text-center">
+                      <h3 class="card-title">{{node.title}}</h3>
+                      <p class="card-text text-justify">{{node.cardBody}}</p>
+                      <a href="#" class="button button-dark">Read more</a>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+          <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev" data-interval="false">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+          <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next" data-interval="false">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
         </div>
       </div>
-      <div class="col pl-5">
+      <div class="col-12 col-lg-6 p-5">
         <div id="carousel2" class="carousel slide">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+            <div class="carousel-item active" id="carousel-third">
+              {% for node in site.pages %}
+                {% if node.isProject %}
+                  <div class="card">
+                    <img class="card-img-top" src="{{node.imgSrc}}" alt="Card image placeholder">
+                    <div class="card-body text-center">
+                      <h3 class="card-title">{{node.title}}</h3>
+                      <p class="card-text text-justify">{{node.cardBody}}</p>
+                      <a href="#" class="button button-dark">Read more</a>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
             </div>
-            <div class="carousel-item">
-              <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+            <div class="carousel-item" id="carousel-fourth">
+              {% for node in site.pages %}
+                {% if node.isProject %}
+                  <div class="card">
+                    <img class="card-img-top" src="{{node.imgSrc}}" alt="Card image placeholder">
+                    <div class="card-body text-center">
+                      <h3 class="card-title">{{node.title}}</h3>
+                      <p class="card-text text-justify">{{node.cardBody}}</p>
+                      <a href="#" class="button button-dark">Read more</a>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+          <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev" data-interval="false">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+          <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next" data-interval="false">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="arrow-wrapper">
-          <div class="arrow"></div>
         </div>
       </div>
     </div>
