@@ -6,30 +6,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <!-- RESET -->
-      <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
 
     <!-- BOOTSTRAP CSS-->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- FONTAWESOME -->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/master.css">
-    <div id="cssInclude"></div>
-    <script src="js/cssloader.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md">
-  <a href="#"><strong>Panagiotis Jones</strong><p class="secondary-text">Full-Stack Web & Software Developer</p></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- There's a white flash till background images load, this is placed on top to cover that -->
+    <div id="loading-placeholder"></div>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+  <a class="navbar-brand" href="#"><strong>Panagiotis Jones</strong><p class="secondary-text">Full-Stack Web & Software Developer</p></a>
+  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
       <li class="nav-item">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
         <a class="nav-link" href="projects.html">Projects</a>
       </li>
       <li class="nav-item">
@@ -51,111 +52,25 @@
         <h1 class="headline text-center">My projects library</h1>
       </div>
     </div>
-    <div class="row mb-5">
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/400/400" alt="Card image placeholder">
-          <div class="card-body text-center">
-            <h3 class="card-title">Lorem Project</h3>
-            <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, in reprehender</p>
-            <a href="#" class="button button-dark">Read more</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row mb-5">
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row mb-5">
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/200/200" alt="Card image placeholder">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
+      
+        
+      
+        
+      
+        
+      
+        
+      
     <div class="row">
       <div class="col">
         <nav aria-label="Page navigation">
           <ul class="pagination">
-            <li><a class="button button-primary" href="#">Previous</a></li>
-            <li><a class="button button-primary button-primary-active" href="#">1</a></li>
-            <li><a class="button button-primary" href="#">2</a></li>
-            <li><a class="button button-primary" href="#">3</a></li>
-            <li><a class="button button-primary" href="#">Next</a></li>
+            <!-- Elements contain some inline CSS and JS but I thought this makes what's going on clearer -->
+            <li><a class="button-dark" href="#top" id="pagination-prev" style="display: none;" onclick="prevPage(this)">Previous</a></li>
+            <li><a class="button-dark button-dark-active" href="#top" id="pagination-1" data-target="page-1" onclick="changePage(this)">1</a></li>
+            <li><a class="button-dark" href="#top" id="pagination-2" data-target="page-2" onclick="changePage(this)">2</a></li>
+            <li><a class="button-dark" href="#top" id="pagination-3" data-target="page-3" onclick="changePage(this)">3</a></li>
+            <li><a class="button-dark" href="#top" id="pagination-next" onclick="nextPage(this)">Next</a></li>
           </ul>
         </nav>
       </div>
@@ -163,23 +78,25 @@
   </div>
 </div>
 
+<script src="js/projects.js"></script>
+
     </main>
 
     <footer class="footer-bar">
   <div class="container pt-4 pb-4">
     <div class="row mb-5">
-      <div class="col-8 text-left">
+      <div class="col-12 col-sm-8 text-left">
         <h2 class="mb-3"><strong>Panagiotis Jones</strong></h2>
         <p>Full-Stack Web & Software Developer</p>
       </div>
-      <div class="col-4 text-left">
+      <div class="col-12 col-sm-4 text-left">
         <h2 class="mb-3">Contact</h2>
         <a class="small" href="mailto:panagiotisjones@gmail.com"><i class="far fa-envelope mr-2"></i> <em>panagiotisjones@gmail.com</em></a>
         <p class="small mt-2"><i class="fas fa-phone mr-2"></i> <em>+44 1342 336541</em></p>
       </div>
     </div>
     <div class="row mb-5">
-      <div class="col-8 text-left">
+      <div class="col-12 col-sm-8 text-left">
         <h2 class="mb-3">Links</h2>
         <ul class="footer-link-list">
           <li><a href="index.html" class="footer-link">Home</a></li>
@@ -187,7 +104,7 @@
           <li><a href="cv.html" class="footer-link">Digital CV</a></li>
           <li><a href="contactme.html" class="footer-link">Contact Me</a></li>
       </div>
-      <div class="col-4 text-left">
+      <div class="col-12 col-sm-4 text-left">
         <h2 class="mb-3">Social</h2>
         <a href="#" class="social-icon"><i class="fab fa-facebook-square"></i></a>
         <a href="#" class="social-icon"><i class="fab fa-twitter-square"></i></a>
@@ -211,3 +128,5 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<script src="js/main.js"></script>

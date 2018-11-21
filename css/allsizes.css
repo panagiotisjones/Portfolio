@@ -48,36 +48,6 @@ a:hover {
   animation-timing-function: ease-in-out;
 }
 
-/* FIRST HOME FRAME */
-.container-home-1 {
-  height: 90vh;
-  background-image: url(../images/blurrycode.jpg);
-  color: var(--soft-white);
-  text-shadow: 1px 3px var(--primary-color);
-  filter: blur(0px);
-}
-
-.arrow-message {
-  margin-top: 10vh;
-}
-
-.arrow-wrapper:hover {
-  cursor: pointer;
-}
-
-.row-space {
-    width: 100%;
-    height: 11.5vh;
-}
-
-/* THIRD HOME FRAME */
-.container-home-3 {
-  background-image: url(../images/newpurple.jpg);
-  height: 100vh;
-  color: var(--soft-white);
-  text-shadow: 1px 3px var(--primary-color);
-}
-
 /* PROJECTS */
 .wrapper-projects {
   background-image: url(../images/blurrycodeblack.jpg);
@@ -111,6 +81,8 @@ a:hover {
   color: var(--soft-white);
   background-color: var(--extra-dark);
   border-color: var(--extra-dark);
+  padding: 8px;
+  border-radius: 1px;
 }
 .button-dark:hover {
   animation-name: hoverAnimation;
@@ -129,7 +101,7 @@ a:hover {
   color: white;
 }
 
-.button-primary-active {
+.button-dark-active {
   border-color: var(--main-dark);
   color: white;
   -webkit-box-shadow: 17px 25px 59px 0px rgba(0, 0, 0, 0.54);
